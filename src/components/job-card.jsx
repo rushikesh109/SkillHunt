@@ -34,7 +34,7 @@ const handleSaveJob = async () => {
 useEffect(()=> {
     if(savedJob !== undefined) setSaved(savedJob?.length > 0)
 },[savedJob])
-return( <Card>
+return( <Card className='felx flex-col' >
     <CardHeader>
         <CardTitle className='flex justify-between font-bold'>{job.title}
         {isMyJob && (

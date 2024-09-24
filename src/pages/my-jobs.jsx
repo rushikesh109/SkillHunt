@@ -9,4 +9,3 @@ const MyJob = () => {
 }
 
 export default MyJob
-MyJob
