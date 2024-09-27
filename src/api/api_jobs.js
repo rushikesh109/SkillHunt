@@ -90,3 +90,18 @@ export async function getSingleJob(token, { job_id }) {
   
     return data;
   }
+
+  export async function addNewJob(token, _, jobData) {
+    const supabase = await supabaseClient(token);
+    const { data, error } = await supabase
+      .from("jobs")
+      .insert([jobData])
+      .select();
+  
+    if (error) {
+      console.error("Error Creating Job:", error);
+      return null;
+    }
+  
+    return data;
+  }
