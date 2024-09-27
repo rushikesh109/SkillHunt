@@ -1,5 +1,6 @@
 import { addNewJob } from '@/api/api_jobs'
 import { getCompanies } from '@/api/apiCompanies'
+import AddCompanyDrawer from '@/components/add-company-drawer'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
@@ -140,7 +141,8 @@ value={field.value} onValueChange={field.onChange}>
             )}
           />
 
-{/* ADD COMPANY DRAWER */}
+
+<AddCompanyDrawer fetchCompanies ={fnCompanies} />
         </div>
 
         {errors.location && (
