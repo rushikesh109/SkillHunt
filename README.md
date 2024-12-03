@@ -1,1 +1,1 @@
-[live preview](https://skill-hunt-vert.vercel.app/)
+[live preview](https://skill-hunt-tan.vercel.app/)
